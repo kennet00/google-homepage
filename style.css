@@ -8,6 +8,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 3;
 }
 .navbar-1 ul {
 	display: flex;
@@ -19,25 +20,29 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: 3;
 }
 .navbar-2 ul {
 	display: flex;
 	flex-direction: row;
-	text-decoration: none;
 }
 .navbar-1 li,
 .navbar-1 a {
 	text-decoration: none;
 	list-style-type: none;
-	padding-top: 20px;
-	padding-left: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
 }
 .navbar-2 li,
 .navbar-2 a {
 	text-decoration: none;
 	list-style-type: none;
-	padding-top: 20px;
-	padding-right: 10px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+a:hover {
+	border-bottom: 1px black solid;
 }
 
 .main {
@@ -85,9 +90,5 @@ button {
 	margin: 0 10px;
 	border: none;
 	border-radius: 5%;
-	justify-items: space-between;
+	justify-self: center;
 }
-
-/* .feeling-lucky {
-	grid-column: 3 / 3;
-} */
